@@ -1,0 +1,16 @@
+@Orders.Api_HostAddress = http://localhost:5097
+
+### Create Order
+POST {{Orders.Api_HostAddress}}/api/orders
+Content-Type: application/json
+
+{
+  "customerName": "John Doe",
+  "totalAmount": 99.99
+}
+
+### Get Order by ID (replace with actual ID)
+GET {{Orders.Api_HostAddress}}/api/orders/00000000-0000-0000-0000-000000000000
+Accept: application/json
+
+###
